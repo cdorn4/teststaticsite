@@ -41,3 +41,32 @@ footer {
     color: white;
     margin-top: 40px;
 }
+/* --- Navigation Buttons --- */
+nav {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Adds space between the buttons */
+    flex-wrap: wrap; /* Keeps them looking nice on small mobile screens */
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005A9C; /* Greek Blue */
+    color: white;
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px; /* Rounds the corners */
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-btn:hover {
+    background-color: #003F6D; /* Darkens the button when hovered */
+}
+
+/* This style applies only to the page you are currently on */
+.nav-btn.active {
+    background-color: #002244; /* Even darker blue to show it's pressed */
+    font-weight: bold;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.3); /* Adds a "pressed in" shadow */
+}
